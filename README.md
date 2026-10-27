@@ -25,8 +25,10 @@ State boundaries come from [Natural Earth](https://www.naturalearthdata.com/). T
 ## Running
 
 ```
-pip install lonboard geopandas pyarrow duckdb palettable matplotlib
+pip install -U "lonboard[geopandas]" "pyarrow>=16" duckdb palettable matplotlib
 jupyter lab gis-viz.ipynb
 ```
+
+On **I-GUIDE**, switch the notebook to the `geoai` conda environment first, then run the install cell and restart the kernel. Older preinstalled `pyarrow` versions cause `ValueError: Expected object with __arrow_c_array__ or __arrow_c_stream__ method`.
 
 Lonboard maps are Jupyter widgets that need WebGL, so run the notebook in JupyterLab/Notebook or VS Code (not a static viewer such as GitHub's).
