@@ -218,3 +218,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Notebook data + generated outputs
+data/
+*.parquet
+us-mobile-speeds.html
